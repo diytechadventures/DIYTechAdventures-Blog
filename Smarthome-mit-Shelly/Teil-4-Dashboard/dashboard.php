@@ -1,7 +1,7 @@
 <?php
 /**
  * Shelly Dashboard - Lokale Visualisierung
- * Teil 4 der Shelly Smart Home Serie
+ * Teil 5 der Shelly Smart Home Serie
  * https://diytechadventures.de
  */
 // Fehler-Logging aktivieren
@@ -12,9 +12,9 @@ ini_set('error_log', '/var/log/apache2/dasboard_errors.log');
 date_default_timezone_set('Europe/Berlin');
 
 // Datenbank-Konfiguration
-define('DB_HOST', '192.168.2.xxx');  // ANPASSEN!
+define('DB_HOST', '192.168.2.190');  // ANPASSEN!
 define('DB_USER', 'shelly_user');
-define('DB_PASS', 'xxxxxxxxxxxx');  // ANPASSEN!
+define('DB_PASS', 'Ostsee.012');  // ANPASSEN!
 define('DB_NAME', 'shelly_data');
 
 // Datenbankverbindung
@@ -99,7 +99,7 @@ function getDeviceIds($pdo, $table) {
 // SELECT DISTINCT device_id, device_name FROM power_data;
 // SELECT DISTINCT device_id, device_name FROM switch_events;
 
-$DEVICE_BLU_HT = 'ac:c6:b7:97:87:ac';           // beispielhafte MAC-Adresse des BLU H&T
+$DEVICE_BLU_HT = '7c:c6:b6:97:33:ac';           // MAC-Adresse des BLU H&T
 $DEVICE_WIFI_HT = 'shellyhtg3-wz';    // ID des H&T WiFi
 $DEVICE_1PM_MINI = 'shelly1pmminig3-d0cf13cb5dd8'; // ID des 1PM Mini
 
